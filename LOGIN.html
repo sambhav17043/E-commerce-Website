@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-Compatible" content="IE=edge">
+  <meta name="vieport" content="width=device-width, initial-scale=1.0">
+  <title>Soul Garden</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+      <a href="#"><img src="LOGO1.jpg" class="LOGO1" alt=""></a>
+
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="login.html">Login</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="Ig-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+      </div>
+    </section>
+
+    <!--Login Page-->
+    <section id="formContent">
+      <h2>Create an Account</h2>
+  
+      <form action="register.php" method="post" id="registrationForm">
+          <input type="text"  name="fullName" placeholder="Full Name">
+          <span class="errorMsg fullNameErr"></span>
+  
+          <input type="email"  name="email" placeholder="Email Address">
+          <span class="errorMsg emailErr"></span>
+  
+          <input type="password"  name="password" placeholder="Password">
+          <span class="errorMsg passwordErr"></span>
+  
+          <input type="password" name="confirmPassword" placeholder="Confirm Password">
+          <span class="errorMsg confirmPasswordErr"></span>
+  
+          <button type="submit">Register</button>
+      </form>
+  
+      <p>Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+  
+    <!-- Social Media Icons -->
+    <section id="social-media">
+      <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    </section>
+ 
+    <!-- Footer Section -->
+    <footering>
+      <p>&copy; 2023 Soul Garden</p>
+    </footering>
+ 
+ 
+    <!-- JAVASCRIPT FILES ============================================= -->
+    <script src="js/jquery.min.js"></script>			
+    <script src="js/bootstrap.bundle.min.js"></script>	
+    <script src="js/owl.carousel.min.js"></script>			
+    <script src="js/isotope.pkgd.min.js"></script>						
+    <script src="js/ajax-form.js"></script>								
+    <script src="js/waypoints.min.js"></script>														
+    <script src="js/jquery.counterup.min.js"></script>																										
+    <script src="js/scrollLock.js"></script>													
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/directselect.js"></script>
+    <script src="js/jquery.dd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+
+    <script src="Script.js"></script>
+</body>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge">
+    <meta name="vieport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Garden</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="LOGO1.jpg" class="LOGO1" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="Ig-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+    </section>
+
+    
+    <!--Cart page like a real e-commerce website-->
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+
+    <div class="product" id="product1">
+        <h2>Product 1</h2>
+        <img src="PRODUCT1.png" alt="" id="image1"/>
+        <p class="name">Product Name: Apple Juice 600ml (Gold)</p>
+        <p class="price">Price: $29.99</p>
+        <button onclick="addToFav('Apple Juice')">Add to Favorites</button>
+        <button onclick="removeFromCart('Apple Juice')">Remove from Cart</button>
+        <input type="number" value="1" id="quantity1" onchange="updateQuantity(this.value,'Apple Juice', 'quantity1','image1')"/>
+        <button onclick="addToCart('Product 1', 20)">Buy</button>
+    </div>
+
+    <div class="product" id="product2">
+        <h2>Product 2</h2>
+        <img src="PRODUCT3.png" alt="" id="image2"/>
+        <p class="name">Product Name: Chocolate Cake 80g (Vanilla)</p>
+        <p class="price">Price: $7.49</p>
+        <button onclick="showAlert()">Add to Favorites</button>
+        <button disabled="disabled">Remove from Cart</button>
+        <input type="number" value="1" id="quantity1" onchange="updateQuantity(this.value,'Apple Juice', 'quantity1','image1')"/>
+        <button onclick="addToCart('Product 2', 30)">Buy</button>
+    </div>
+    
+    <script src="Script.js">
+    </script>
+</body>
